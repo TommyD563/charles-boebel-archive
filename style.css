@@ -1,0 +1,263 @@
+/* ================================
+   CHARLES BOEBEL DIGITAL ARCHIVE
+   ================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f5f1e8;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Navigation */
+
+header {
+    background: #171717;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 22px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    opacity: 0.65;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 25px;
+    background: #e9e0cf;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.eyebrow {
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #665f53;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 7vw, 6.5rem);
+    line-height: 0.95;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.intro {
+    max-width: 600px;
+    margin: 0 auto 35px;
+    font-size: 1.15rem;
+    color: #555;
+}
+
+.button {
+    display: inline-block;
+    background: #171717;
+    color: white;
+    text-decoration: none;
+    padding: 15px 28px;
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background: #444;
+}
+
+/* Plays */
+
+.plays-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 110px 30px;
+}
+
+.section-heading {
+    margin-bottom: 55px;
+}
+
+.section-heading h2 {
+    font-size: 3rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.section-heading > p:last-child {
+    color: #666;
+}
+
+.play-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.play-card {
+    background: #fff;
+    padding: 40px 35px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd5c7;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.play-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.play-number {
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: #888;
+    margin-bottom: auto;
+}
+
+.play-card h3 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.play-card p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.play-card a {
+    color: #222;
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.play-card a:hover {
+    text-decoration: underline;
+}
+
+/* About */
+
+.about-section {
+    background: #171717;
+    color: white;
+    padding: 110px 30px;
+}
+
+.about-section .section-heading {
+    max-width: 1200px;
+    margin: auto auto 40px;
+}
+
+.about-section .eyebrow {
+    color: #aaa;
+}
+
+.about-section h2 {
+    font-size: 3.5rem;
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-content p {
+    max-width: 650px;
+    color: #ccc;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+
+footer {
+    background: #111;
+    color: #888;
+    text-align: center;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .play-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .section-heading h2 {
+        font-size: 2.5rem;
+    }
+}
