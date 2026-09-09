@@ -255,6 +255,94 @@ footer {
     font-family: Arial, sans-serif;
     font-size: 0.75rem;
 }
+/* Individual Play Pages */
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.play-page {
+    background: #f5f1e8;
+    min-height: 100vh;
+}
+
+.play-detail {
+    max-width: 1100px;
+    margin: auto;
+    padding: 90px 30px 120px;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.play-detail-cover img {
+    width: 100%;
+    max-width: 420px;
+    display: block;
+    margin: auto;
+    border: 1px solid #ddd5c7;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+.play-detail-info h1 {
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-weight: normal;
+    line-height: 0.95;
+    margin-bottom: 18px;
+}
+
+.play-detail-subtitle {
+    font-size: 1.35rem;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.play-facts {
+    padding: 25px 0;
+    border-top: 1px solid #d8d0c2;
+    border-bottom: 1px solid #d8d0c2;
+    margin-bottom: 40px;
+}
+
+.play-facts p {
+    margin-bottom: 8px;
+}
+
+.play-description h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.play-description p {
+    color: #666;
+    max-width: 600px;
+}
+
+.play-actions {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.text-link {
+    color: #222;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
 
 /* Mobile */
 
@@ -279,4 +367,18 @@ footer {
     .section-heading h2 {
         font-size: 2.5rem;
     }
+
+    .play-detail {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-top: 60px;
+}
+
+.play-detail-cover img {
+    max-width: 320px;
+}
+
+.play-detail-info h1 {
+    font-size: 3.2rem;
+}
 }
