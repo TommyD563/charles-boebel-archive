@@ -221,28 +221,44 @@ nav {
     padding: 110px 30px;
 }
 
-.about-section .section-heading {
+.about-wrapper {
     max-width: 1200px;
-    margin: auto auto 40px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.8fr 1.4fr;
+    gap: 70px;
+    align-items: start;
 }
 
-.about-section .eyebrow {
+.about-photo img {
+    width: 100%;
+    max-width: 380px;
+    display: block;
+    margin: auto;
+    border: 1px solid #333;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+}
+
+.about-text .eyebrow {
     color: #aaa;
 }
 
-.about-section h2 {
+.about-text h2 {
     font-size: 3.5rem;
+    font-weight: normal;
+    line-height: 1.05;
+    margin-bottom: 35px;
 }
 
-.about-content {
-    max-width: 1200px;
-    margin: auto;
+.about-text {
+    max-width: 700px;
 }
 
-.about-content p {
-    max-width: 650px;
+.about-text p {
     color: #ccc;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    margin-bottom: 22px;
+    max-width: 760px;
 }
 
 /* Footer */
@@ -381,4 +397,25 @@ footer {
 .play-detail-info h1 {
     font-size: 3.2rem;
 }
+}
+.about-wrapper {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.about-photo img {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    display: block;
+    border: 1px solid #333;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+}
+
+.about-text h2 {
+    font-size: 2.7rem;
 }
