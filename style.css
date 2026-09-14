@@ -122,7 +122,7 @@ nav {
 .plays-section {
     max-width: 1200px;
     margin: auto;
-    padding: 110px 30px;
+    padding: 110px 30px 45px;
 }
 
 .section-heading {
@@ -213,6 +213,51 @@ nav {
     text-decoration: underline;
 }
 
+/* Works Table */
+
+.works-table-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 35px 30px 80px;
+}
+
+.works-table-section h2 {
+    font-size: 2.8rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.works-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    background: white;
+}
+
+.works-table th,
+.works-table td {
+    border: 1px solid #333;
+    padding: 14px 16px;
+    text-align: left;
+}
+
+.works-table th {
+    background: #171717;
+    color: white;
+}
+
+.works-table td {
+    color: #222;
+}
+
+.works-table caption {
+    caption-side: top;
+    text-align: left;
+    margin-bottom: 12px;
+    font-style: italic;
+    color: #666;
+}
+
 /* About */
 
 .about-section {
@@ -259,6 +304,80 @@ nav {
     font-size: 1.05rem;
     margin-bottom: 22px;
     max-width: 760px;
+}
+
+.selected-works {
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid #333;
+}
+
+.selected-works h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+
+.selected-works > ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.selected-works ul ul {
+    list-style-type: circle;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    padding-left: 25px;
+}
+
+.selected-works li {
+    margin-bottom: 7px;
+    color: #ccc;
+}
+
+.selected-works a {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+.selected-works a:hover {
+    color: white;
+}
+
+/* Education & Career Timeline */
+
+.career-timeline {
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.career-timeline h3 {
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+
+.career-timeline ol {
+    padding-left: 24px;
+}
+
+.career-timeline li {
+    margin-bottom: 16px;
+    color: #ccc;
+    line-height: 1.45;
+}
+
+.career-timeline strong {
+    display: block;
+    color: white;
+    margin-bottom: 3px;
+}
+
+.career-timeline span {
+    display: block;
+    color: #aaa;
+    font-size: 0.92rem;
 }
 
 /* Footer */
@@ -418,4 +537,63 @@ footer {
 
 .about-text h2 {
     font-size: 2.7rem;
+}
+
+/* Colored archive labels */
+.eyebrow {
+    color: #9a7745;
+}
+
+/* Horizontal Rule */
+
+.section-divider {
+    border: none;
+    border-top: 1px solid #c9bda9;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Animated Clip Art */
+.animated-clipart {
+    display: inline-block;
+    font-size: 2.4rem;
+    color: #9a7745;
+    margin: 8px 0 12px;
+    animation: writingMotion 2s ease-in-out infinite;
+}
+
+@keyframes writingMotion {
+    0%, 100% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(15px) rotate(-8deg);
+    }
+}
+
+/* Marquee Banner */
+.marquee-banner {
+    width: 100%;
+    overflow: hidden;
+    background: #9a7745;
+    color: white;
+    padding: 8px 0;
+    white-space: nowrap;
+}
+
+.marquee-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
